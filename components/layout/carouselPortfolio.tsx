@@ -20,8 +20,6 @@ interface CarouselPortfolioProps {
     altBase: string
 }
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? ""
-
 export function CarouselPortfolio({ images, altBase }: CarouselPortfolioProps) {
   return (
     <Carousel className="w-full group/carousel">

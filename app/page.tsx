@@ -13,7 +13,6 @@ import { SeccionHabilidadesTecnicas } from '@/components/layout/seccionHabilidad
 import { SeccionEducacion } from '@/components/layout/seccionEducacion'
 import { SeccionContacto } from '@/components/layout/seccionContacto'
 import { SeccionHero } from '@/components/layout/seccionHero'
-import { Github, Linkedin, Mail, Phone, ExternalLink, Code, Database, Globe, Briefcase, GraduationCap, Users, GitBranch, Container, Menu, X, AlertTriangle, BadgeCentIcon, Award } from 'lucide-react'
 
 export default function Portfolio() {
   return (

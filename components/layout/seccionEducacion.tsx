@@ -7,10 +7,9 @@ import { GraduationCap, Award, ExternalLink, ZoomIn } from 'lucide-react'
 
 export function SeccionEducacion(){
     const imgInsignias = [
-        "/images/insignias/insignia-developing_containerized_applications_on_google_cloud.png",
-        "/images/insignias/futuras-insignias.png",
+        "/Portfolio/images/insignias/insignia-developing_containerized_applications_on_google_cloud.png",
+        "/Portfolio/images/insignias/futuras-insignias.png",
     ]
-    const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? ""
     return(
         <div className="py-8 space-y-8 p-4">
             {/* SECCIÓN 1: FORMACIÓN ACADÉMICA */}
