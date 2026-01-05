@@ -1,26 +1,169 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* =========================================================
+   1. CSS RESET / NORMALIZATION
+   ---------------------------------------------------------
+   Reglas base para asegurar consistencia entre navegadores.
+   Acá NO van colores ni estilos de diseño.
+   ========================================================= */
+
+/* Pendiente:
+   - Reset básico (margin, padding)
+   - box-sizing
+*/
+
+
+/* =========================================================
+   2. VARIABLES CSS (DESIGN TOKENS)
+   ---------------------------------------------------------
+   Variables globales reutilizables:
+   - colores
+   - tipografías
+   - espaciados
+   - tamaños
+   ========================================================= */
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Mapeo directo para que funcionen bg-primary, text-secondary, etc. */
+  --color-background: #ffffff;
+  --color-foreground: #171717;
+  
+  --color-card: #ffffff;
+  --color-card-foreground: #171717;
+  
+  --color-primary: #18181b;       /* Negro/Gris muy oscuro */
+  --color-primary-foreground: #fafafa;
+  
+  --color-secondary: #f4f4f5;     /* Gris clarito para los Badges */
+  --color-secondary-foreground: #18181b;
+  
+  --color-muted: #f4f4f5;
+  --color-muted-foreground: #71717a;
+  
+  --color-accent: #f4f4f5;
+  --color-accent-foreground: #18181b;
+  
+  --color-border: #e4e4e7;
+  --color-input: #e4e4e7;
+  --color-ring: #18181b;
+
+  --color-csharp: #7355dd;
+  --color-python: #3776ab;
+  --color-typescript: #3178C6;
+  --color-sqlserver: #B71C1C;
+  --color-mysql: #F29111;
+  --color-postgresql: #336791;
+  --color-nodejs: #5FA04E;
+  --color-dotnet: #512bd4;
+  --color-nextjs: #000000;
+  --color-angular: #DD0031;
+  --color-windowsform: #007ACC;
+  --color-aspnetwebapi: #49CC90;
+  --color-tailwindcss: #38B2AC;
+  --color-expressjs: #000000;
+  --color-django: #092E20;
+  --color-docker: #0db7ed;
+  --color-github: #24292e;
+  --color-pandas: #150458;
+  --color-matplotlib: #11557c;
+  --color-office: #DC3E15;
+
+  /* Radios para que las Cards se vean bien */
+  --radius-lg: 0.5rem;
+  --radius-md: calc(0.5rem - 2px);
+  --radius-sm: calc(0.5rem - 4px);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* =========================================================
+   3. ESTILOS BASE (ELEMENTOS HTML)
+   ---------------------------------------------------------
+   Estilos por defecto para elementos HTML:
+   body, h1-h6, p, a, ul, etc.
+   Nada específico de componentes.
+   ========================================================= */
+
+/* body { } */
+/* h1, h2, h3, h4, h5, h6 { } */
+/* p { } */
+/* a { } */
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    /* Acá aplico una fuente limpia por defecto */
+    font-family: sans-serif; 
+  }
+
+  /* Esto asegura que las Cards y Badges usen el color de borde definido arriba */
+  * {
+    border-color: var(--color-border);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* =========================================================
+   4. LAYOUT GLOBAL
+   ---------------------------------------------------------
+   Clases estructurales generales:
+   - contenedores
+   - secciones
+   - wrappers
+   ========================================================= */
+
+/* .container { } */
+/* .section { } */
+html {
+  scroll-behavior: smooth;
+  /* El alto del Nav es de 14 (3.5rem/56px). 
+     Esto hace que al cliquear, la sección frene un poco antes. */
+  scroll-padding-top: 5rem; 
 }
+
+/* =========================================================
+   5. COMPONENTES REUTILIZABLES
+   ---------------------------------------------------------
+   Estilos propios de componentes UI:
+   - cards
+   - badges
+   - buttons
+   (si no usás Tailwind para algo puntual)
+   ========================================================= */
+
+/* .card { } */
+/* .badge { } */
+
+
+/* =========================================================
+   6. UTILIDADES
+   ---------------------------------------------------------
+   Clases helper pequeñas y reutilizables:
+   - text-center
+   - margin helpers
+   - display helpers
+   ========================================================= */
+
+/* .text-center { } */
+/* .mt-sm { } */
+
+
+/* =========================================================
+   7. MEDIA QUERIES (RESPONSIVE)
+   ---------------------------------------------------------
+   Breakpoints globales.
+   Idealmente pocos y claros.
+   ========================================================= */
+
+/*
+@media (min-width: 768px) {
+}
+*/
+
+
+/* =========================================================
+   8. DEBUG / TEMPORAL
+   ---------------------------------------------------------
+   Estilos temporales para debugging visual.
+   NO deberían quedar en producción.
+   ========================================================= */
+
+/* .debug { outline: 1px solid red; } */
