@@ -9,11 +9,11 @@ import { ModalDetalleProyecto } from '@/components/layout/modalDetalleProyecto'
 
 export function ProyectoGimnasio(){
     const imgSistGestorGimnasio = [
-    "/images/projects/sistGestorGimnasio/EER_Diagram.png",
-    "/images/projects/sistGestorGimnasio/1-paginainicial.png",
-    "/images/projects/sistGestorGimnasio/2-login.png",
-    "/images/projects/sistGestorGimnasio/3-maquina_elemento.png",
-    "/images/projects/sistGestorGimnasio/4-maquina_elemento_agregar.png",
+    "/Portfolio/images/projects/sistGestorGimnasio/EER_Diagram.png",
+    "/Portfolio/images/projects/sistGestorGimnasio/1-paginainicial.png",
+    "/Portfolio/images/projects/sistGestorGimnasio/2-login.png",
+    "/Portfolio/images/projects/sistGestorGimnasio/3-maquina_elemento.png",
+    "/Portfolio/images/projects/sistGestorGimnasio/4-maquina_elemento_agregar.png",
     "/images/projects/sistGestorGimnasio/5-tipo_clase.png",
     "/images/projects/sistGestorGimnasio/6-tipo_clase_filtrar.png",
     "/images/projects/sistGestorGimnasio/7-tipo_clase_editar_1.png",
