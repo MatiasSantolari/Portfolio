@@ -34,7 +34,7 @@ export function CarouselPortfolio({ images, altBase }: CarouselPortfolioProps) {
                 <div className="overflow-hidden rounded-lg cursor-zoom-in relative group/img">
                   <div className="aspect-video w-full">
                     <Image
-                      src={`${basePath}${img}`}
+                      src={img}
                       alt={`${altBase} ${index + 1}`}
                       width={800}
                       height={450}
@@ -57,7 +57,7 @@ export function CarouselPortfolio({ images, altBase }: CarouselPortfolioProps) {
                   {`Vista ampliada de ${altBase} - Imagen ${index + 1}`}
                 </DialogTitle>
                 <img 
-                  src={`${basePath}${img}`}
+                  src={img}
                   alt={`${altBase} ampliada`}
                   className="max-h-[90vh] w-auto object-contain rounded-md shadow-2xl"
                 />

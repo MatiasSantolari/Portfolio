@@ -54,7 +54,7 @@ export function SeccionEducacion(){
                                     <DialogTrigger asChild>
                                         <div className="flex-shrink-0 w-12 h-12 rounded-lg overflow-hidden bg-muted flex items-center justify-center border border-border cursor-zoom-in relative group/img">
                                             <img 
-                                                src={`${basePath}${imgInsignias[0]}`}
+                                                src={imgInsignias[0]}
                                                 alt="Insignia curso" 
                                                 className="object-cover w-full h-full transition-transform group-hover/img:scale-110"
                                             />
@@ -69,7 +69,7 @@ export function SeccionEducacion(){
                                             Vista ampliada de la insignia
                                         </DialogTitle>
                                         <img 
-                                        src={`${basePath}${imgInsignias[0]}`}
+                                        src={imgInsignias[0]}
                                         alt="Insignia ampliada" 
                                         className="max-h-[80vh] w-auto object-contain rounded-lg shadow-2xl"
                                         />
@@ -111,7 +111,7 @@ export function SeccionEducacion(){
                                     <DialogTrigger asChild>
                                         <div className="flex-shrink-0 w-12 h-12 rounded-lg overflow-hidden bg-muted flex items-center justify-center border border-border cursor-zoom-in relative group/img">
                                             <img 
-                                                src={`${basePath}${imgInsignias[1]}`}
+                                                src={imgInsignias[1]}
                                                 alt="Insignia curso" 
                                                 className="object-cover w-full h-full transition-transform group-hover/img:scale-110"
                                             />
@@ -126,7 +126,7 @@ export function SeccionEducacion(){
                                             Vista ampliada de la insignia
                                         </DialogTitle>
                                         <img 
-                                        src={`${basePath}${imgInsignias[1]}`}
+                                        src={imgInsignias[1]}
                                         alt="Insignia ampliada" 
                                         className="max-h-[80vh] w-auto object-contain rounded-lg shadow-2xl"
                                         />
