@@ -8,6 +8,7 @@ import { GraduationCap, Award, ExternalLink, ZoomIn } from 'lucide-react'
 export function SeccionEducacion(){
     const imgInsignias = [
         "/Portfolio/images/insignias/insignia-developing_containerized_applications_on_google_cloud.png",
+        "/Portfolio/images/insignias/insignia-Docker_Essentials_A_Developer_Introduction.png",
         "/Portfolio/images/insignias/futuras-insignias.png",
     ]
     return(
@@ -126,6 +127,63 @@ export function SeccionEducacion(){
                                         </DialogTitle>
                                         <img 
                                         src={imgInsignias[1]}
+                                        alt="Insignia ampliada" 
+                                        className="max-h-[80vh] w-auto object-contain rounded-lg shadow-2xl"
+                                        />
+                                    </DialogContent>
+                                </Dialog>
+
+                                {/* 2. Información del Curso */}
+                                <div className="flex-grow min-w-0">
+                                    <CardTitle className="text-sm truncate font-bold group-hover:text-primary transition-colors">
+                                        Docker Essentials: A Developer Introduction
+                                    </CardTitle>
+                                    <CardDescription className="text-xs flex flex-col sm:flex-row sm:items-center gap-1">
+                                        <span>IBM Skills Network</span>
+                                        <span className="hidden sm:inline">•</span>
+                                        <span className="text-primary/80 font-medium">2026</span>
+                                    </CardDescription>
+                                </div>
+
+                                {/* 3. Link de Verificación (Icono externo) */}
+                                <a 
+                                    href="https://www.credly.com/badges/1054777c-c66c-4f81-88a3-c06691ccc2e0/public_url" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="text-muted-foreground hover:text-primary transition-colors p-2"
+                                    title="Ver certificado oficial"
+                                >
+                                    <ExternalLink className="w-4 h-4" />
+                                </a>
+                            </div>
+                        </CardHeader>
+                    </Card>
+
+                    {/* Curso 3 */}
+                    <Card className="hover:border-primary/50 transition-all hover:shadow-md group">
+                        <CardHeader className="p-4">
+                            <div className="flex items-center gap-4">
+                                {/* 1. Contenedor del modal de la Insignia*/}
+                                <Dialog>
+                                    <DialogTrigger asChild>
+                                        <div className="flex-shrink-0 w-12 h-12 rounded-lg overflow-hidden bg-muted flex items-center justify-center border border-border cursor-zoom-in relative group/img">
+                                            <img 
+                                                src={imgInsignias[2]}
+                                                alt="Insignia curso" 
+                                                className="object-cover w-full h-full transition-transform group-hover/img:scale-110"
+                                            />
+                                        {/* Overlay sutil al hacer hover */}
+                                            <div className="absolute inset-0 bg-black/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                                                <ZoomIn className="w-4 h-4 text-white" />
+                                            </div>
+                                        </div>
+                                    </DialogTrigger>
+                                    <DialogContent className="max-w-3xl border-none bg-transparent shadow-none flex items-center justify-center">
+                                        <DialogTitle className="sr-only">
+                                            Vista ampliada de la insignia
+                                        </DialogTitle>
+                                        <img 
+                                        src={imgInsignias[2]}
                                         alt="Insignia ampliada" 
                                         className="max-h-[80vh] w-auto object-contain rounded-lg shadow-2xl"
                                         />
