@@ -13,6 +13,7 @@ import { SeccionHabilidadesTecnicas } from '@/components/layout/seccionHabilidad
 import { SeccionEducacion } from '@/components/layout/seccionEducacion'
 import { SeccionContacto } from '@/components/layout/seccionContacto'
 import { SeccionHero } from '@/components/layout/seccionHero'
+import { ProyectoBITDC } from '@/components/layout/proyectoBITDC'
 
 export default function Portfolio() {
   return (
@@ -24,6 +25,7 @@ export default function Portfolio() {
           <h2 className="text-3xl font-bold tracking-tight">Proyectos</h2>
         </div>
         <div className="grid grid-cols-1 gap-8 m-4"> 
+          <ProyectoBITDC />
           <ProyectoGimnasio />
           <ProyectoTiendaReparacion />
           <ProyectoModuloCompras />

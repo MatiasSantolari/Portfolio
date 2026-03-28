@@ -8,24 +8,25 @@ import { useState } from 'react'
 import { ModalDetalleProyecto } from '@/components/layout/modalDetalleProyecto'
 
 export function ProyectoModuloCompras(){
+    const basePath = (process.env.NEXT_PUBLIC_BASE_PATH || "").replace(/\/$/, "");
     const imgSistModuloCompras = [
-    "/Portfolio/images/projects/sistModuloCompras/modeloDominioModuloCompras.png",
-    "/Portfolio/images/projects/sistModuloCompras/DERSQLServer.png",
-    "/Portfolio/images/projects/sistModuloCompras/0-inicio.jpg",
-    "/Portfolio/images/projects/sistModuloCompras/1-compra-getAll-vacio.jpg",
-    "/Portfolio/images/projects/sistModuloCompras/2-compra-getAll-lleno.jpg",
-    "/Portfolio/images/projects/sistModuloCompras/3-descuento-post-vacio.jpg",
-    "/Portfolio/images/projects/sistModuloCompras/4-descuento-post-lleno.jpg",
-    "/Portfolio/images/projects/sistModuloCompras/5-descuento-post-enviado.jpg",
-    "/Portfolio/images/projects/sistModuloCompras/6-producto-getOne-vacio.jpg",
-    "/Portfolio/images/projects/sistModuloCompras/7-producto-getOne-lleno.jpg",
-    "/Portfolio/images/projects/sistModuloCompras/8-proveedor-post-lleno.jpg",
-    "/Portfolio/images/projects/sistModuloCompras/9-proveedor-post-enviado.jpg",
-    "/Portfolio/images/projects/sistModuloCompras/10-proveedor-getOne-lleno.jpg",
-    "/Portfolio/images/projects/sistModuloCompras/11-proveedor-put-enviado.jpg",
-    "/Portfolio/images/projects/sistModuloCompras/12-proveedor-put-lleno.jpg",
-    "/Portfolio/images/projects/sistModuloCompras/13-proveedor-delete-enviado.jpg",
-    "/Portfolio/images/projects/sistModuloCompras/14-proveedor-getOne-noEncontrado.jpg",
+      `${basePath}/images/projects/sistModuloCompras/modeloDominioModuloCompras.png`,
+      `${basePath}/images/projects/sistModuloCompras/DERSQLServer.png`,
+      `${basePath}/images/projects/sistModuloCompras/0-inicio.jpg`,
+      `${basePath}/images/projects/sistModuloCompras/1-compra-getAll-vacio.jpg`,
+      `${basePath}/images/projects/sistModuloCompras/2-compra-getAll-lleno.jpg`,
+      `${basePath}/images/projects/sistModuloCompras/3-descuento-post-vacio.jpg`,
+      `${basePath}/images/projects/sistModuloCompras/4-descuento-post-lleno.jpg`,
+      `${basePath}/images/projects/sistModuloCompras/5-descuento-post-enviado.jpg`,
+      `${basePath}/images/projects/sistModuloCompras/6-producto-getOne-vacio.jpg`,
+      `${basePath}/images/projects/sistModuloCompras/7-producto-getOne-lleno.jpg`,
+      `${basePath}/images/projects/sistModuloCompras/8-proveedor-post-lleno.jpg`,
+      `${basePath}/images/projects/sistModuloCompras/9-proveedor-post-enviado.jpg`,
+      `${basePath}/images/projects/sistModuloCompras/10-proveedor-getOne-lleno.jpg`,
+      `${basePath}/images/projects/sistModuloCompras/11-proveedor-put-enviado.jpg`,
+      `${basePath}/images/projects/sistModuloCompras/12-proveedor-put-lleno.jpg`,
+      `${basePath}/images/projects/sistModuloCompras/13-proveedor-delete-enviado.jpg`,
+      `${basePath}/images/projects/sistModuloCompras/14-proveedor-getOne-noEncontrado.jpg`,
     ]
     const detallesTecnicos = {
       titulo: "Módulo de Compras ERP",

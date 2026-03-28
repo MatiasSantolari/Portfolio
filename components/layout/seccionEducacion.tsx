@@ -6,10 +6,11 @@ import { Dialog, DialogContent, DialogTrigger, DialogTitle } from '@/components/
 import { GraduationCap, Award, ExternalLink, ZoomIn } from 'lucide-react'
 
 export function SeccionEducacion(){
+    const basePath = (process.env.NEXT_PUBLIC_BASE_PATH || "").replace(/\/$/, "");
     const imgInsignias = [
-        "/Portfolio/images/insignias/insignia-developing_containerized_applications_on_google_cloud.png",
-        "/Portfolio/images/insignias/insignia-Docker_Essentials_A_Developer_Introduction.png",
-        "/Portfolio/images/insignias/futuras-insignias.png",
+        `${basePath}/images/insignias/insignia-developing_containerized_applications_on_google_cloud.png`,
+        `${basePath}/images/insignias/insignia-Docker_Essentials_A_Developer_Introduction.png`,
+        `${basePath}/images/insignias/futuras-insignias.png`,
     ]
     return(
         <div className="py-8 space-y-8 p-4">

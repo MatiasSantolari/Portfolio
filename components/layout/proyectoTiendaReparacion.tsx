@@ -8,34 +8,35 @@ import { useState } from 'react'
 import { ModalDetalleProyecto } from '@/components/layout/modalDetalleProyecto'
 
 export function ProyectoTiendaReparacion(){
+    const basePath = (process.env.NEXT_PUBLIC_BASE_PATH || "").replace(/\/$/, "");
     const imgSistGestorTiendaReparacion = [
-    "/Portfolio/images/projects/sistGestorTiendaReparacion/DERSQLServer.png",
-    "/Portfolio/images/projects/sistGestorTiendaReparacion/clientes.jpg",
-    "/Portfolio/images/projects/sistGestorTiendaReparacion/clientesBusqueda1.jpg",
-    "/Portfolio/images/projects/sistGestorTiendaReparacion/clientesBusqueda2.jpg",
-    "/Portfolio/images/projects/sistGestorTiendaReparacion/clientesVerTrabajosGenerarTicket.jpg",
-    "/Portfolio/images/projects/sistGestorTiendaReparacion/clientesVerTrabajosVerEmpleados.jpg",
-    "/Portfolio/images/projects/sistGestorTiendaReparacion/clientesVerTrabajosVerEmpleados2.jpg",
-    "/Portfolio/images/projects/sistGestorTiendaReparacion/clienteVerTrabajos.jpg",
-    "/Portfolio/images/projects/sistGestorTiendaReparacion/clienteVerTrabajosAgregarTrabajo.jpg",
-    "/Portfolio/images/projects/sistGestorTiendaReparacion/editarTrabajo.jpg",
-    "/Portfolio/images/projects/sistGestorTiendaReparacion/empleados.jpg",
-    "/Portfolio/images/projects/sistGestorTiendaReparacion/empleadoVerTareas.jpg",
-    "/Portfolio/images/projects/sistGestorTiendaReparacion/informeDemandaAnual.jpg",
-    "/Portfolio/images/projects/sistGestorTiendaReparacion/login.jpg",
-    "/Portfolio/images/projects/sistGestorTiendaReparacion/loginLleno.jpg",
-    "/Portfolio/images/projects/sistGestorTiendaReparacion/tareas.jpg",
-    "/Portfolio/images/projects/sistGestorTiendaReparacion/ticket.jpg",
-    "/Portfolio/images/projects/sistGestorTiendaReparacion/trabajosAgregados.jpg",
-    "/Portfolio/images/projects/sistGestorTiendaReparacion/trabajoTerminado1.jpg",
-    "/Portfolio/images/projects/sistGestorTiendaReparacion/trabajoTerminado2.jpg",
+      `${basePath}/images/projects/sistGestorTiendaReparacion/DERSQLServer.png`,
+      `${basePath}/images/projects/sistGestorTiendaReparacion/clientes.jpg`,
+      `${basePath}/images/projects/sistGestorTiendaReparacion/clientesBusqueda1.jpg`,
+      `${basePath}/images/projects/sistGestorTiendaReparacion/clientesBusqueda2.jpg`,
+      `${basePath}/images/projects/sistGestorTiendaReparacion/clientesVerTrabajosGenerarTicket.jpg`,
+      `${basePath}/images/projects/sistGestorTiendaReparacion/clientesVerTrabajosVerEmpleados.jpg`,
+      `${basePath}/images/projects/sistGestorTiendaReparacion/clientesVerTrabajosVerEmpleados2.jpg`,
+      `${basePath}/images/projects/sistGestorTiendaReparacion/clienteVerTrabajos.jpg`,
+      `${basePath}/images/projects/sistGestorTiendaReparacion/clienteVerTrabajosAgregarTrabajo.jpg`,
+      `${basePath}/images/projects/sistGestorTiendaReparacion/editarTrabajo.jpg`,
+      `${basePath}/images/projects/sistGestorTiendaReparacion/empleados.jpg`,
+      `${basePath}/images/projects/sistGestorTiendaReparacion/empleadoVerTareas.jpg`,
+      `${basePath}/images/projects/sistGestorTiendaReparacion/informeDemandaAnual.jpg`,
+      `${basePath}/images/projects/sistGestorTiendaReparacion/login.jpg`,
+      `${basePath}/images/projects/sistGestorTiendaReparacion/loginLleno.jpg`,
+      `${basePath}/images/projects/sistGestorTiendaReparacion/tareas.jpg`,
+      `${basePath}/images/projects/sistGestorTiendaReparacion/ticket.jpg`,
+      `${basePath}/images/projects/sistGestorTiendaReparacion/trabajosAgregados.jpg`,
+      `${basePath}/images/projects/sistGestorTiendaReparacion/trabajoTerminado1.jpg`,
+      `${basePath}/images/projects/sistGestorTiendaReparacion/trabajoTerminado2.jpg`,
     ]
     const detallesTecnicos = {
       titulo: "Sistema de Gestión de Servicio Técnico",
       contexto: "Un taller local de reparación de dispositivos (celulares, PCs, impresoras) gestionaba las órdenes de trabajo y la asignación de tareas de forma manual. Esto causaba confusiones en los estados de reparación y demoras en la entrega a los clientes. El objetivo fue crear una herramienta sencilla pero eficaz que permitiera registrar el ingreso de equipos, asignar técnicos a reparaciones específicas y emitir un ticket al finalizar el trabajo, profesionalizando la atención al público del negocio y la comunicación entre el propio personal.",
       decisiones: "Elegí desarrollar una aplicación de escritorio con C# y Windows Forms porque era la solución más práctica para el entorno del taller: una única computadora en el mostrador que no dependía de internet para funcionar. Al usar SQL Server y Entity Framework Core, aseguré que toda la información de clientes y reparaciones estuviera organizada y fuera fácil de consultar. Esta combinación permitió una respuesta inmediata del sistema al cargar datos, algo vital cuando hay un cliente esperando en el local. Además, al ser una solución local, el cliente no tiene costos mensuales de mantenimiento ni servidores externos.",
       retos: "Un reto fue el desarrollo de informe de demandas anual, quería que fuera algo muy grafico y libre de complejidad visual, implementé una lógica para procesar los datos de las reparaciones del año y mostrarlos en gráficos simples, permitiendo que el dueño viera, por primera vez de forma clara, qué meses tenía más trabajo y cuánto estaba recaudando realmente.",
-      aprendizajes: "Este proyecto me enseñó el valor de la digitalización en pequeños negocios. Aprendí a escuchar al usuario final (los empleados del taller) para crear interfaces que realmente les ahorren tiempo en lugar de complicarlos. Como mejora, sería interesante añadir un módulo de notificaciones automáticas para que, al cambiar el estado a 'Terminado', el sistema envíe un mensaje al cliente informándole que ya puede retirar su equipo. Asimismo, a futuro es importante evolucionar el informe de demanda hacia un panel de Business Intelligence que no solo muestre volumen, sino también rentabilidad por tipo de dispositivo (ej. ¿deja más ganancia reparar celulares o PCs?) y tiempos promedio de resolución. Esto transformaría al sistema de una herramienta de registro en una de apoyo a las decisiones, permitiendo al dueño optimizar el personal según la estacionalidad del negocio."
+      aprendizajes: "Este proyecto me enseñó el valor de la digitalización en pequeños negocios. Aprendí a escuchar al usuario final (los empleados del taller) para crear interfaces que realmente les ahorren tiempo en lugar de complicarlos. Como mejora, sería interesante añadir un módulo de notificaciones automáticas para que, al cambiar el estado a 'Terminado', el sistema envíe un mensaje al cliente informándole que ya puede retirar su equipo. Asimismo, a futuro es importante evolucionar el informe de demanda hacia un panel de Business Intelligence que no solo muestre volumen, sino también rentabilidad por tipo de dispositivo (ej. ¿deja más ganancia reparar celulares o PCs?) y tiempos promedio de resolución. Esto transformaría al sistema de una herramienta de registro en una de apoyo a las decisiones, permitiendo al dueño optimizar el personal según la estacionalidad del negocio.",
     };
     const [isModalOpen, setIsModalOpen] = useState(false); // Estado para el modal
     return(
