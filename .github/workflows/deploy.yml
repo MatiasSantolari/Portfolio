@@ -20,7 +20,11 @@ jobs:
           node-version: 22
 
       - run: npm install
-      - run: npm run build
+      - name: Build with Next.js
+        run: npm run build
+        env:
+          # Aquí es donde ocurre la magia: le pasamos la variable a Next.js
+          NEXT_PUBLIC_BASE_PATH: ${{ vars.NEXT_PUBLIC_BASE_PATH }}
 
       - uses: actions/upload-pages-artifact@v3
         with:
