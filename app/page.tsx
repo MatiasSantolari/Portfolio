@@ -14,6 +14,7 @@ import { SeccionEducacion } from '@/components/layout/seccionEducacion'
 import { SeccionContacto } from '@/components/layout/seccionContacto'
 import { SeccionHero } from '@/components/layout/seccionHero'
 import { ProyectoBITDC } from '@/components/layout/proyectoBITDC'
+import { ProyectoNetflix } from '@/components/layout/proyectoNetflix'
 
 export default function Portfolio() {
   return (
@@ -28,6 +29,7 @@ export default function Portfolio() {
           <ProyectoBITDC />
           <ProyectoGimnasio />
           <ProyectoTiendaReparacion />
+          <ProyectoNetflix />
           <ProyectoModuloCompras />
         </div>
       </section>

@@ -68,7 +68,7 @@ export function ProyectoBITDC(){
                 <div className="w-full md:w-[400px] lg:w-[450px] mx-auto">
                   <CarouselPortfolio
                     images={imgSistBITDC}
-                    altBase="Captura del sistema gestor de gimnasios"
+                    altBase="Captura del sistema BITDC"
                   />
                 </div>
               </div>

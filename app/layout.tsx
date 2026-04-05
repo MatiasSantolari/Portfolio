@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/navbar";
+import { Import } from "lucide-react";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -16,8 +17,8 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Matías Santolari - Desarrollador Backend & Analista de Sistemas",
-  description: "Desarrollador Backend especializado en .NET y Python & Analista de Sistemas. Enfocado en soluciones escalables, arquitectura limpia y optimización de procesos.",
+  title: "Matías Santolari - Analista de Sistemas | BI | Desarrollador Backend",
+  description: "Analista de Sistemas, Analista de BI & Desarrollador Backend especializado en .NET y Python. Enfocado en soluciones escalables, arquitectura limpia y optimización de procesos y estrategias.",
   keywords: [
     "Matías Santolari",
     "Desarrollador .NET",
@@ -27,7 +28,6 @@ export const metadata: Metadata = {
     "Portfolio",
     "Next.js",
     "TypeScript",
-    "C#",
     "UTN",
     "Programador",
     ".NET 8",
@@ -36,6 +36,18 @@ export const metadata: Metadata = {
     "REST API",
     "SQL Server",
     "Microservicios",
+    "Business Intelligence",
+    "Analisis de Datos",
+    "DAX",
+    "Power BI",
+    "Power Query",
+    "ETL",
+    "Data Warehouse",
+    "Star Schema",
+    "Modelado de Datos",
+    "NumPy",
+    "Pandas",
+    "SQLAlchemy",
     "Arquitectura Limpia",
     "Backend Developer",
     "Ingeniería de Software",
@@ -46,14 +58,14 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Matías Santolari" }],
   creator: "Matías Santolari",
-  metadataBase: new URL("https://matiassantolari.github.io/portfolio"),
+  metadataBase: new URL("https://matiassantolari.github.io/Portfolio"),
   alternates: {
-    canonical: "/portfolio",
+    canonical: "/Portfolio",
   },
   openGraph: {
     title: "Matías Santolari - Portfolio",
-    description: "Explora el portfolio de Matías Santolari: proyectos de ingeniería de software, soluciones en .NET, Python y análisis de sistemas.",
-    url: "https://matiassantolari.github.io/portfolio",
+    description: "Explora el portfolio de Matías Santolari: proyectos de ingeniería de software, soluciones en .NET, Python, análisis de sistemas, datos y BI.",
+    url: "https://matiassantolari.github.io/Portfolio",
     siteName: "Portfolio - Matías Santolari",
     type: "website",
     locale: "es_AR",
