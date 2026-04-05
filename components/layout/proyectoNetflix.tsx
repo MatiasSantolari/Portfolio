@@ -86,7 +86,7 @@ export function ProyectoNetflix(){
                   <FileSearch className="w-4 h-4" /> Análisis Técnico
                 </Button>
                 <Button variant="outline" size="sm" className="gap-2" asChild>
-                  <a href="https://github.com/MatiasSantolari/ProyectoBI-TDC.git" target="_blank">
+                  <a href="https://github.com/MatiasSantolari/Catalogo_Netflix_Analisis_de_Datos-2008-2021-.git" target="_blank">
                     <Github className="w-4 h-4 mr-2" /> GitHub
                   </a>
                 </Button>
