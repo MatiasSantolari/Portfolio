@@ -15,6 +15,7 @@ import { SeccionContacto } from '@/components/layout/seccionContacto'
 import { SeccionHero } from '@/components/layout/seccionHero'
 import { ProyectoBITDC } from '@/components/layout/proyectoBITDC'
 import { ProyectoNetflix } from '@/components/layout/proyectoNetflix'
+import { ProyectoPlatosPizza } from '@/components/layout/proyectoPlatosPizza'
 
 export default function Portfolio() {
   return (
@@ -23,13 +24,19 @@ export default function Portfolio() {
       <SeccionHabilidadesTecnicas />
       <section id="proyectos" className="py-8 space-y-8">
         <div className='flex flex-col justify-between items-center'>
-          <h2 className="text-3xl font-bold tracking-tight">Proyectos</h2>
+          <h2 className="text-3xl font-bold tracking-tight">Proyectos de BI & Análisis de Datos</h2>
         </div>
         <div className="grid grid-cols-1 gap-8 m-4"> 
+          <ProyectoPlatosPizza />
           <ProyectoBITDC />
+          <ProyectoNetflix />
+        </div>
+        <div className='flex flex-col justify-between items-center'>
+          <h2 className="text-3xl font-bold tracking-tight">Proyectos de Desarrollo & Sistemas</h2>
+        </div>
+        <div className="grid grid-cols-1 gap-8 m-4"> 
           <ProyectoGimnasio />
           <ProyectoTiendaReparacion />
-          <ProyectoNetflix />
           <ProyectoModuloCompras />
         </div>
       </section>
